@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Smythe', system-ui, serif;
+}
+
+#container {
+    width: 600px;
+    margin: 10px auto;
+    box-shadow: 0 0 10px #999;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#title, #sub-title {
+    position: absolute;
+    color: white;
+    top: 10px;
+    left: 50px;
+    font-weight: 400;
+}
+
+#title {
+    font-size: 39px;
+}
+
+#sub-title {
+    top: 70px;
+    font-size: 22px;
+}
+
+.item--image {
+    width: 70px;
+    margin-right: 20px;
+}
+
+.item--name, .order--title {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.item--price {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#thank-you {
+    background-color: #ECFDF5;
+    color: #065F46;
+    padding: 20px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.thank-you-text {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.payment--title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pay-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.complete-order-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    background-color: #16DB99;
+    color: white;
+    padding: 20px 180px;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+.complete-order-btn:active {
+    transform: scale(1.05);
+}
+
+.item--remove-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    background: none;
+    border: none;
+    color: #BBBBBB;
+    cursor: pointer;
+}
+
+.item--remove-btn:hover {
+    color: rgb(214, 73, 73);
+}
+
+#order-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.order--total--row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #D2D2D2;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.add-btn {
+    cursor: pointer;
+    margin: 0 0 0 auto;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    border: 2px solid #DEDEDE;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.add-btn:hover {
+    border: 2px solid #999;
+}
+
+.add-btn:active {
+    background-color: whitesmoke;
+}
+
+.item--name {
+    margin-bottom: 5px;
+}
+
+.item--ingredients {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.item--price {
+    margin-top: 0;
+}
+
+.order--title {
+    text-align: center;
+}
+
+.order--item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.order--item-name {
+    font-size: 28px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.order--item-price {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: auto;
+}
+
+.order--total {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h3.item--price {
+    margin: 0;
+}
+
+.order--total--row {
+    border-top: 2px solid #393333;    
+    height: 50px;
+    margin: 20px 0;
+}
+
+#payment {
+    box-shadow: 0 40px 100px #666;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+    display: block;
+    border: 1px solid #757575;
+    padding: 15px 120px 15px 20px;
+    margin: 15px auto;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.payment--title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pay-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    background-color: #16DB99;
+    color: white;
+    padding: 20px 200px;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+.pay-btn:active {
+    transform: scale(1.05);
+}
+
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 30px 0;
+    margin: 20px 0 0 0;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.close-btn {
+    width: 40px;
+    background-color: white;
+    height: 40px;
+    font-size: 20px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    margin-left: auto;
+    cursor: pointer;
+}

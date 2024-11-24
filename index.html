@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <img src="./images/header.png">
+                <h1 id="title">Jimmy's Diner</h1>
+                <h2 id="sub-title">The best burgers and pizzas in town.</h2>
+            </header>
+            
+            <main>
+                <section id="items-section"></section> 
+               
+                <section id="order-section" class="hidden">
+                    <h2 class="order--title">Your order</h2>
+                    <div id="order--items"></div>
+                    <div class="order--total">
+                        <div class="order--total--row">
+                            <h2 class="order--title">Total price:</h2>
+                            <h3 class="item--price" id="cart--total"></h3>
+                        </div>
+                    </div>
+                    <button class="complete-order-btn" id="complete-order-btn">Complete order</button> 
+                </section> 
+               
+                <section id="payment-section" class="hidden">
+                    <div id="payment">
+                        <button class="close-btn" id="close-btn">X</button>
+                        <h2 class="payment--title">Enter card details</h2>
+                        <form id="payment-form">
+                            <input 
+                                type="text" 
+                                placeholder="Enter your name" 
+                                id="form--name"
+                                required>
+                            <input 
+                                type="text" 
+                                placeholder="Enter card number" 
+                                id="form--card" 
+                                pattern="(\d{4}\s){3}\d{4}"
+                                title="Enter a valid credit card number (e.g., 1234-5678-9012-3456)."
+                                required>
+                            <input 
+                                type="text" 
+                                placeholder="Enter CVV" 
+                                id="form--cvv" 
+                                pattern="\d{3}"
+                                title="Enter a valid CVV (e.g., 123)."
+                                required>
+                            <button type="submit" class="pay-btn">Pay</button>
+                        </form> 
+                    </div>
+                </section> 
+               
+                
+                <section id="thank-you-section"></section> 
+            </main>
+            
+            <footer>
+                <span id="footer--text"></span>
+            </footer>
+        </div>
+	    <script src="./index.js" type="module"></script>
+    </body>
+</html>
+
